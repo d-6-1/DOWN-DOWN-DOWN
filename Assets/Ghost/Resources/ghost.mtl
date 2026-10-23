@@ -1,0 +1,9 @@
+newmtl GhostBody
+Kd 0.07 0.07 0.09
+Ks 0 0 0
+d 1.0
+
+newmtl GhostEye
+Kd 1.0 1.0 1.0
+Ks 0 0 0
+d 1.0
