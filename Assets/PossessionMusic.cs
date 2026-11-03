@@ -1,4 +1,4 @@
-// @role Crossfades to each possessed animal's own music loop (hero, chicken, giraffe, cat, rabbit, elephant, dachshund, dog, extras), switches to campfire music near the ghost campfire, and fades in a wind sound while it snows
+// @role Crossfades to each possessed animal's own music loop (hero, chicken, giraffe, rabbit, elephant, dachshund, dog, extras), switches to campfire music near the ghost campfire, and fades in a wind sound while it snows
 // @calls GhostController SkierController SlopeFork SnowWeatherManager
 // @tune volume:float:0-1:Music volume
 // @tune fadeTime:float:0-5:Crossfade time in seconds
@@ -28,8 +28,6 @@ public class PossessionMusic : MonoBehaviour
     public AudioClip chickenMusic;
     [Tooltip("附身到长颈鹿")]
     public AudioClip giraffeMusic;
-    [Tooltip("附身到猫")]
-    public AudioClip catMusic;
     [Tooltip("附身到兔子")]
     public AudioClip rabbitMusic;
     [Tooltip("附身到大象")]
@@ -140,7 +138,6 @@ public class PossessionMusic : MonoBehaviour
             // 每只动物的模型里都有一个叫 XxxModel 的零件（复制出来的外壳会改名叫 DogModel，所以先认具体的动物）
             if (HasChildNamed(body.transform, "ChickenModel")) { kind = "鸡"; return chickenMusic; }
             if (HasChildNamed(body.transform, "GiraffeModel")) { kind = "长颈鹿"; return giraffeMusic; }
-            if (HasChildNamed(body.transform, "CatModel")) { kind = "猫"; return catMusic; }
             if (HasChildNamed(body.transform, "RabbitModel")) { kind = "兔子"; return rabbitMusic; }
             if (HasChildNamed(body.transform, "ElephantModel")) { kind = "大象"; return elephantMusic; }
             if (HasChildNamed(body.transform, "DachshundModel")) { kind = "腊肠"; return dachshundMusic; }

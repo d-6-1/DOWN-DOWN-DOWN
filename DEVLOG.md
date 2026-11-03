@@ -36,5 +36,5 @@ Add `## Stage Reflection NNN — title` only when you ask for one: Keep / Change
 - Date: 2026-11-03
 - Who asked: Chloe
 - Request: Each possessed animal plays its own music loop; the ghost campfire has its own music; the snow and wind phase plays a wind sound.
-- What changed: `PossessionMusic.cs` now has a music slot for the hero, chicken, giraffe, cat, rabbit, elephant and dachshund, a `campfireMusic` slot that plays near the campfire in the left lane (`campfireRange`) or during the campfire dialogue, and a `windSound` layer that fades in while `SnowWeatherManager.isSnowing` is on (`windVolume`, `windFadeTime`).
+- What changed: `PossessionMusic.cs` now has a music slot for the hero, chicken, giraffe, rabbit, elephant and dachshund, a `campfireMusic` slot that plays near the campfire in the left lane (`campfireRange`) or during the campfire dialogue, and a `windSound` layer that fades in while `SnowWeatherManager.isSnowing` is on (`windVolume`, `windFadeTime`).
 - Result: The player's verb did not change. Win and loss did not change. Only the mood/feedback changed.
